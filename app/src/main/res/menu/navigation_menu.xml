@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/about_nav"
+        android:icon="@drawable/about_"
+        android:title="About"
+        android:iconTint="@color/primary_color"/>
+    <item
+        android:id="@+id/feedBack_nav"
+        android:icon="@drawable/feedback"
+        android:title="Feedback"
+        android:iconTint="@color/primary_color"/>
+    <item
+        android:id="@+id/exit_nav"
+        android:icon="@drawable/exit"
+        android:title="Exit"
+        android:iconTint="@color/primary_color"
+        />
+
+</menu>

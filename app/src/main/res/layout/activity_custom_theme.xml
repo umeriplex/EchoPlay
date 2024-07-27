@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CustomThemeActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"
+        android:layout_marginBottom="16dp"
+
+      >
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="Themes"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/themeBannerAd"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="10dp"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:src="@drawable/theme1"
+                    app:shapeAppearanceOverlay="@style/curved"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/theme1"
+                    android:layout_weight="1"
+                    />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/theme2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:src="@drawable/theme2"
+                    app:shapeAppearanceOverlay="@style/curved"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="10dp"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:src="@drawable/theme3"
+                    app:shapeAppearanceOverlay="@style/curved"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:layout_weight="1"
+                    android:id="@+id/theme3"
+                    />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:src="@drawable/theme4"
+                    app:shapeAppearanceOverlay="@style/curved"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:layout_weight="1"
+                    android:id="@+id/theme4"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="10dp"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:src="@drawable/theme5"
+                    app:shapeAppearanceOverlay="@style/curved"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:layout_weight="1"
+                    android:id="@+id/theme5"
+                    />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:src="@drawable/theme6"
+                    app:shapeAppearanceOverlay="@style/curved"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:layout_weight="1"
+                    android:id="@+id/theme6"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="10dp"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:src="@drawable/theme7"
+                    app:shapeAppearanceOverlay="@style/curved"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:layout_weight="1"
+                    android:id="@+id/theme7"
+                    />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:src="@drawable/theme8"
+                    app:shapeAppearanceOverlay="@style/curved"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:layout_weight="1"
+                    android:id="@+id/theme8"
+                    />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Default Theme"
+                android:id="@+id/defaultTheme"
+                android:background="@color/white"
+                android:textColor="@color/primary_color"
+                android:layout_margin="10dp"
+                android:paddingHorizontal="15dp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/themeBannerAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:adSize="BANNER"
+        app:adUnitId="@string/banner_id"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

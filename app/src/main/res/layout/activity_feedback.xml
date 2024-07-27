@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.FeedbackActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"
+        android:layout_marginBottom="30dp">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="Feedback"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/feedbackTopic"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="Topic i.e Suggestion, Error etc"
+        android:gravity="center|start"
+        android:layout_marginVertical="5dp"
+        android:singleLine="true"
+        android:layout_marginHorizontal="20dp"
+        android:inputType="textEmailSubject"
+        />
+
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/feedbackText"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:hint="Feedback..."
+        android:gravity="top|start"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="20dp"
+        android:inputType="text"
+        />
+
+    <Button
+        android:id="@+id/sendFeedbackBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:background="@color/white"
+        android:text="Send"
+        android:layout_marginVertical="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+    />
+
+
+
+</LinearLayout>
